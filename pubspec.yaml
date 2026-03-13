@@ -57,7 +57,7 @@ dev_dependencies:
   json_serializable: ^6.8.0
   build_runner: ^2.4.6
   fake_cloud_firestore: ^3.0.3
-  firebase_storage_mocks: ^0.7.0
+  firebase_storage_mocks: ^0.8.0+1   # ✅ UPGRADE INI
   flutter_lints: ^4.0.0
 
 flutter:

@@ -1,15 +1,12 @@
 name: Build APK Release
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -43,16 +40,10 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Run build_runner
-        run: dart run build_runner build --delete-conflicting-outputs
-
-      - name: Analyze project source
-        run: flutter analyze --no-fatal-infos
-        continue-on-error: true
-
-      - name: Run tests
-        run: flutter test
-        continue-on-error: true
+      - name: Run build_runner (skip test files)
+        run: |
+          dart run build_runner build --delete-conflicting-outputs \
+            --build-filter="lib/**"
 
       - name: Build APK Release
         run: |

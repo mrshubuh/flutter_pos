@@ -147,7 +147,7 @@ class _SingleSelectDropDown<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField<T>(
-      Value: dropdown.selectedValue,
+      value: dropdown.selectedValue,
       onChanged: dropdown.onChanged,
       items: dropdown.dropdownItems,
       style: dropdown.textStyle(context),

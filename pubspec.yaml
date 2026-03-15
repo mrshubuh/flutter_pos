@@ -1,11 +1,10 @@
 name: flutter_pos
 description: "A new Flutter project."
 publish_to: "none"
-
 version: 3.0.0
 
 environment:
-  sdk: ">=3.3.4 <4.0.0"
+  sdk: ">=3.7.2 <4.0.0"
 
 dependencies:
   flutter:
@@ -26,7 +25,6 @@ dependencies:
   logger: ^2.0.2+1
   cupertino_icons: ^1.0.6
   google_fonts: ^6.3.0
-  material_color_utilities: ^0.11.1
   google_sign_in: ^6.2.1
   firebase_auth: ^5.5.0
   cached_network_image: ^3.3.1
@@ -54,7 +52,7 @@ dev_dependencies:
     sdk: flutter
   mockito: ^5.4.4
   json_serializable: ^6.8.0
-  build_runner: ^2.4.6
+  build_runner: ^2.4.13
   fake_cloud_firestore: ^3.0.3
   firebase_storage_mocks: ^0.7.0
   flutter_lints: ^4.0.0

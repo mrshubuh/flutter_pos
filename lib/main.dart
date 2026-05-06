@@ -28,7 +28,7 @@ void main() async {
   await FirebaseFirestore.instance.clearPersistence();
 
   // Initialize date formatting
-  await initializeDateFormatting();
+  await initializeDateFormatting('id_ID', null);
 
   // Initialize shared preferences
   final sharedPreferences = await SharedPreferences.getInstance();

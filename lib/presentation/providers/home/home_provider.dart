@@ -30,7 +30,7 @@ class HomeProvider extends ChangeNotifier {
 
   List<OrderedProductEntity> orderedProducts = [];
   int receivedAmount = 0;
-  String selectedPaymentMethod = 'cash';
+  String selectedPaymentMethod = 'Cash';
   String? customerName;
   String? description;
 

@@ -159,11 +159,11 @@ class _AdditionalInfoDialogState extends ConsumerState<_AdditionalInfoDialog> {
           selectedValue: provider.selectedPaymentMethod,
           dropdownItems: const [
             DropdownMenuItem(
-              value: 'bank',
-              child: Text('Bank'),
+              value: 'QRIS',
+              child: Text('QRIS'),
             ),
             DropdownMenuItem(
-              value: 'cash',
+              value: 'Cash',
               child: Text('Cash'),
             ),
           ],
